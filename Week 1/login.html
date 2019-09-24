@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            #success{
+                color: green;
+                text-align: center;
+            }
+            #fail{
+                color: red;
+                text-align: center;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <h1 class="text-center">Login</h1>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+                function porm(){
+                var x,y;
+                x=(document.getElementById("txt1").value);
+                y=(document.getElementById("txt2").value);
+                if (x=="System" && y=="Admin"){
+                    
+                    
+                        alert("Login Succesful")
+                        document.getElementById("success").innerHTML="Login successfull"
+                    
+                }
+                else {
+                    alert("Login failed");   
+                    document.getElementById("fail").innerHTML="Login Failed"
+                
+                }
+
+                console.log(x,y);
+                }
+        </script>
+           <fieldset>
+        <form>
+                <div class="form-group primary" style="margin-left: 400px">
+                  <label for="txt1">Username</label>
+                  <input style="padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  box-sizing: border-box;
+                  margin-top: 5px;
+                  margin-bottom: 16px;
+                  width: 30%;
+                   height: 30px;" type="text" name="" id="txt1" class="form-control" placeholder="Username" /> 
+                </div>
+                <div class="form-group" style="margin-left: 400px">
+                  <label for="txt2">Password</label>
+                  <input style="padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  box-sizing: border-box;
+                  margin-top: 5px;
+                  margin-bottom: 16px;
+                  width: 30%;
+                  height: 30px;" type="password" name="" id="txt2" class="form-control" placeholder="Password" />
+                </div>
+                <input type="button" class="btn-btn-primary" onclick="porm()" value="Submit" style="margin-left: 400px"/>
+            </fieldset>
+                <h2 id="success"></h2>
+                <h2 id="fail"></h2>
+                
+            </form>
+    </body>
+</html>

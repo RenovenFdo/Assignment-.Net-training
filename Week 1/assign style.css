@@ -1,0 +1,162 @@
+table{
+    width: 400px;
+}
+tbody tr:nth-child( odd ){
+    background-color: peru;
+    
+}
+tbody tr:nth-child( even ){
+    background-color: darkolivegreen
+}
+tr{
+    height: 40px;
+    border: peru;
+}
+.p2{
+    font-size: 18px;
+    font-weight: 5px;
+    padding: 10px;
+    padding-top: 0px;
+}
+.a2{
+    text-decoration: none;
+    color: black;
+    padding-left: 3px;
+    margin-left: 0px;
+    padding-top: 3px;
+}
+article{
+    height: 150px;
+    background-color: darkgray;
+}
+#art1{
+    height: 50px;
+    background-color:black;
+}
+#art2{
+    height: 100px;
+    background-color: darkgrey;
+    margin-top: 0px;
+}
+.max{
+    color:  azure;
+    margin-top: 8px;
+    padding-left: 10px;
+    padding: 9px;
+}
+    .review{
+        width: 550px;
+        height: 600px;
+        background-color: goldenrod;
+        margin: 0px auto;
+
+    }
+    .navv:hover{
+        color: orange;
+    }
+    a:hover{
+        color: orange;
+    }
+    .los{
+        font-weight: 100px;
+        padding: 5px;
+        text-align: left;
+    }
+    .by{
+        font-weight: 10px;
+        padding: 5px;
+        text-align: left; 
+        margin-top: 0px;
+    }
+    .sub{
+        padding: 5px;
+        text-align: right;
+        font-style: italic;
+    }
+    #green{
+        width: 550px;
+        height: 300px;
+        background-color: green;
+        margin: 0px auto;
+
+    }
+    #cycle{
+        padding: 2px;
+    }
+    #rent{
+        font-size: 20px;
+        padding: 10px;
+        margin: 5px;
+    }
+    #trump{
+        padding: 10px;
+    }
+      #co{
+        color: coral;
+        padding: 2px 18px;
+        display: inline;
+
+      }
+      #last{
+        padding: 2px 18px;
+        display: inline;
+
+      }
+      aside{
+        height: 110px;
+        background-color: peru;
+      }
+      .bb{
+          font-style: italic;
+          font-weight: 1000;
+          padding: 30px 15px;
+          font-size: 20px;
+      }
+      img {
+        margin-left: 20px;
+
+}
+    .division{
+            display: inline-block
+            
+            
+    }
+    #top{
+            display: inline-block
+    }
+    a{
+            text-decoration: none;
+            color: black;
+            margin-left: 50px;
+
+    }
+    header{
+            width: 100%;               
+    }
+    section{
+            width: 100%;
+            height: 1000px;
+    }
+    footer{
+            width: 100%;
+            height: 200px;
+    }
+    #new{
+        font-size: 15px;
+        padding: 10px;
+        margin: 5px;
+        font-style: italic;
+    }
+    .navv{
+        padding-top: 20px;        
+    }    
+      .vl {
+        border-left: 2px solid black;
+        height: 920px;
+        position: absolute;
+        top: 380px;
+        left: 52%;
+        margin-left: -3px; 
+      }
+      *{
+        font-family: 'Times New Roman', Times, serif      }

@@ -1,0 +1,74 @@
+input[type=text],[type=password],[type=number]
+{padding: 12px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+margin-top: 5px;
+margin-bottom: 16px;
+width: 30%;
+height: 40px;
+outline-color: royalblue;
+
+
+}
+#dob{
+        padding: 5px;
+        padding-left: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 5px;
+        margin-bottom: 16px;
+        width: 15%;
+        height: 40px;
+}
+
+    .secure{
+        font-size: 15px;
+        margin-top: 0px;
+
+    }
+    input[type=email]
+{padding: 12px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+margin-top: 5px;
+margin-bottom: 16px;
+width: 40%;
+height: 40px;
+outline-color: royalblue;
+}
+#a1{
+    font-size: 16px;
+    color: royalblue;
+    text-decoration: none;
+
+}
+input[type=submit]
+{
+    background-color: royalblue;
+    box-sizing: border-box;
+    width: 12%;
+    height: 35px;
+    color: azure;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+nav{
+    text-decoration: none; 
+    margin-left: 700px;
+    margin-top: 2px;
+}
+.a3{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+select{
+    margin-left: 200px;
+    border: 0px;
+}

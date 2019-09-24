@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+            
+        </style>
+        <script>
+                $(document).ready(function(){
+                $("#btnzin").click(function(){
+                    $(".image").animate({
+                         width:"+=30px",
+                         height:"+=30px",
+                         maxHeight:"300px",
+                         maxWidth:"300px"
+                    });
+                });
+                $("#btnzout").click(function(){
+                    $(".image").animate({
+                        width:"-=30px",
+                        height:"-=30px",
+                        minHeight:"100px",
+                         minWidth:"100px"
+                    },"linear");
+                });
+                });
+                </script>
+</head>
+<body>
+        <button style="display: block" id="btnzin">Zoom in</button>
+        <button style="display: block" id="btnzout">Zoom out</button>
+        <img class="image" style="position: relative" src="C:\Users\rfernando7\Documents\Assignment\Week 1\goog1.png" width="200px" height="200px"/>
+        
+</body>
+</html>

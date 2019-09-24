@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Multiplication table</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 class="text-center">Multiplication Table</h1>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <span style = "font-size:15px">First Number: </span><input type = "text" id = "first_num" style = "font-size:18px" placeholder="Highest Number you need"> <br /><br />
+    <span style = "font-size:15px">Second Number: </span><input type = "text" id = "second_num" style = "font-size:18px" placeholder="Maximum times you need"> <br /><br />
+    <button type = "button" onclick = "display()">Display</button> <br /><br />
+    <script>
+   function display() {
+  var f_num = parseInt(document.getElementById("first_num").value);
+  var s_num = parseInt(document.getElementById("second_num").value);
+ for (i=1;i<f_num + 1;i++) {
+        for (j=1;j<s_num + 1;j++) {
+        document.write(i+"*" +j +"=" +(i*j) + "  |  ");
+        }
+        document.write("<br><br>")
+        }
+} 
+
+</script>
+    </body>
+</html>
