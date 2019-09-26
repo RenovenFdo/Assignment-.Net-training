@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>table js</title>
+<style>
+table{
+    border:2px solid black;
+}
+
+td,th{
+    border:2px solid black;
+}
+</style>
+
+</head>
+<body>
+<div id="createtable">
+
+</div>
+<script>
+var x=document.getElementById("createtable");
+var h=document.createElement("h2");
+h.innerHTML="Bio data";
+x.appendChild(h);
+var c=document.createElement("table");
+x.appendChild(c);
+var t=document.createElement("th");
+c.appendChild(t);
+t.innerHTML="User";
+var t=document.createElement("th");
+c.appendChild(t);
+t.innerHTML="Height(cm)";
+var t=document.createElement("th");
+c.appendChild(t);
+t.innerHTML="Weight(kg)";
+var r=document.createElement("tr");
+c.appendChild(r);
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="John";
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="181";
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="82";
+
+var r=document.createElement("tr");
+c.appendChild(r);
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="Sam";
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="169";
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="66";
+
+var r=document.createElement("tr");
+c.appendChild(r);
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="Santi";
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="158";
+var d=document.createElement("td");
+r.appendChild(d);
+d.innerHTML="52";
+
+
+
+
+</script>
+</body>
