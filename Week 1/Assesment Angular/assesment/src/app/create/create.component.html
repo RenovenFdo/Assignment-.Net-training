@@ -1,0 +1,20 @@
+<form (ngSubmit)="savedepartment()" >
+    <h2>Create a Department</h2> 
+<div class="form-group">
+    <label>Department</label>
+    <input name="department" type="number" class="form-control" [(ngModel)]="depart.Department" >
+</div>
+<div class="form-group">
+    <label>Name</label>
+    <input name="name" type="text" class="form-control" [(ngModel)]="depart.Name" >
+</div>
+<div class="form-group">
+    <label>GroupName</label>
+    <input name="groupname" type="text" class="form-control" [(ngModel)]="depart.Groupname" >
+</div>
+<!-- <div class="form-group">
+    <label>Modified Date</label>
+    <input name="id" type="date" class="form-control" [(ngModel)]="depart.Date" >
+</div> -->
+<button class="btn btn-primary" type="submit">Submit</button>
+</form>

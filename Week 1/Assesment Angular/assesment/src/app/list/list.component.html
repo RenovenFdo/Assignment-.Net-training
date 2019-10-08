@@ -1,0 +1,46 @@
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <th>Department</th>
+            <th>Name</th>
+            <th>Groupname</th>
+            <th>Modified Date</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dep of deplist1;let i=index ">
+            <td>{{dep.Department}}</td>
+            <td>{{dep.Name | titlecase}}</td>
+            <td>{{dep.Groupname | titlecase}}</td>
+            <td>{{dep.Date|date:'dd:MM:yyyy | hh:mm:ss'}}</td>
+            <td><button class="btn btn-success" id="edit" (click)=edit(i)>Edit</button></td>
+            <td><button class="btn btn-danger" id="delete" (click)=delete(i)>Delete</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="updatediv" *ngIf="updatediv">
+    <form (ngSubmit)="update()" >
+        <h2>Update a Department</h2> 
+    <div class="form-group">
+        <label>Department</label>
+        <input name="department" type="number" class="form-control" [(ngModel)]="depart.Department" >
+    </div>
+    <div class="form-group">
+        <label>Name</label>
+        <input name="name" type="text" class="form-control" [(ngModel)]="depart.Name" >
+    </div>
+    <div class="form-group">
+        <label>GroupName</label>
+        <input name="groupname" type="text" class="form-control" [(ngModel)]="depart.Groupname" >
+    </div>
+    <!-- <div class="form-group">
+        <label>Modified Date</label>
+        <input name="modified" type="text" class="form-control" [(ngModel)]="depart.Date" >
+    </div> -->
+    <div class="form-group>">
+        <button class="btn btn-primary" type="submit">Update</button>
+    </div>
+    </form>
+</div>
