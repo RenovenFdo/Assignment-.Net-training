@@ -1,0 +1,6 @@
+C:\Users\rfernando7\Documents\C# .net\Assignment 2\Bank Details\obj\Debug\Bank Details.csprojAssemblyReference.cache
+C:\Users\rfernando7\Documents\C# .net\Assignment 2\Bank Details\bin\Debug\Bank Details.exe.config
+C:\Users\rfernando7\Documents\C# .net\Assignment 2\Bank Details\bin\Debug\Bank Details.exe
+C:\Users\rfernando7\Documents\C# .net\Assignment 2\Bank Details\bin\Debug\Bank Details.pdb
+C:\Users\rfernando7\Documents\C# .net\Assignment 2\Bank Details\obj\Debug\Bank Details.exe
+C:\Users\rfernando7\Documents\C# .net\Assignment 2\Bank Details\obj\Debug\Bank Details.pdb
