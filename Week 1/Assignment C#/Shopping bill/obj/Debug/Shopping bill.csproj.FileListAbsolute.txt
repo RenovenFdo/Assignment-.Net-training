@@ -1,0 +1,6 @@
+C:\Users\rfernando7\Documents\C# .net\Assignment 1\Shopping bill\bin\Debug\Shopping bill.exe.config
+C:\Users\rfernando7\Documents\C# .net\Assignment 1\Shopping bill\bin\Debug\Shopping bill.exe
+C:\Users\rfernando7\Documents\C# .net\Assignment 1\Shopping bill\bin\Debug\Shopping bill.pdb
+C:\Users\rfernando7\Documents\C# .net\Assignment 1\Shopping bill\obj\Debug\Shopping bill.csprojAssemblyReference.cache
+C:\Users\rfernando7\Documents\C# .net\Assignment 1\Shopping bill\obj\Debug\Shopping bill.exe
+C:\Users\rfernando7\Documents\C# .net\Assignment 1\Shopping bill\obj\Debug\Shopping bill.pdb
