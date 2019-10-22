@@ -1,0 +1,6 @@
+C:\Users\rfernando7\Documents\C# .net\Day 5\CRUD Assignment\bin\Debug\CRUD Assignment.exe.config
+C:\Users\rfernando7\Documents\C# .net\Day 5\CRUD Assignment\bin\Debug\CRUD Assignment.exe
+C:\Users\rfernando7\Documents\C# .net\Day 5\CRUD Assignment\bin\Debug\CRUD Assignment.pdb
+C:\Users\rfernando7\Documents\C# .net\Day 5\CRUD Assignment\obj\Debug\CRUD Assignment.csprojAssemblyReference.cache
+C:\Users\rfernando7\Documents\C# .net\Day 5\CRUD Assignment\obj\Debug\CRUD Assignment.exe
+C:\Users\rfernando7\Documents\C# .net\Day 5\CRUD Assignment\obj\Debug\CRUD Assignment.pdb
