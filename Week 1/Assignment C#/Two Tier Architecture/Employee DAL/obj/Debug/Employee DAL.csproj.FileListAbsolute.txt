@@ -1,0 +1,5 @@
+C:\Users\rfernando7\Documents\C# .net\Two Tier Architecture\Employee DAL\bin\Debug\Employee DAL.dll
+C:\Users\rfernando7\Documents\C# .net\Two Tier Architecture\Employee DAL\bin\Debug\Employee DAL.pdb
+C:\Users\rfernando7\Documents\C# .net\Two Tier Architecture\Employee DAL\obj\Debug\Employee DAL.csprojAssemblyReference.cache
+C:\Users\rfernando7\Documents\C# .net\Two Tier Architecture\Employee DAL\obj\Debug\Employee DAL.dll
+C:\Users\rfernando7\Documents\C# .net\Two Tier Architecture\Employee DAL\obj\Debug\Employee DAL.pdb
