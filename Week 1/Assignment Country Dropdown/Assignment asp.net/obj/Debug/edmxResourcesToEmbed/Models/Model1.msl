@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="assignmentModelStoreContainer" CdmEntityContainer="assignmentEntities">
+    <EntitySetMapping Name="countries">
+      <EntityTypeMapping TypeName="assignmentModel.country">
+        <MappingFragment StoreEntitySet="country">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="state1">
+      <EntityTypeMapping TypeName="assignmentModel.state1">
+        <MappingFragment StoreEntitySet="state1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="state2">
+      <EntityTypeMapping TypeName="assignmentModel.state2">
+        <MappingFragment StoreEntitySet="state2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="state3">
+      <EntityTypeMapping TypeName="assignmentModel.state3">
+        <MappingFragment StoreEntitySet="state3">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="state4">
+      <EntityTypeMapping TypeName="assignmentModel.state4">
+        <MappingFragment StoreEntitySet="state4">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="states">
+      <EntityTypeMapping TypeName="assignmentModel.state">
+        <MappingFragment StoreEntitySet="state">
+          <ScalarProperty Name="countryid" ColumnName="countryid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

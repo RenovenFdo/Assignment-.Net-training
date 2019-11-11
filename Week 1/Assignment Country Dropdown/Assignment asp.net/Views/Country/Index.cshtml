@@ -1,0 +1,35 @@
+﻿@model Assignment_asp.net.Models.variable
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@if (ViewBag.country != null)
+{
+    @Html.DropDownList("country", ViewBag.Country as SelectList, "Select Country", new { @class = "form-control" })
+}
+
+@*@Html.LabelFor(x => x.id, "State")*@
+@Html.DropDownListFor(m => m.sid, new SelectList(""), "Select State", new { @class = "form-control" })
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript">
+        $(document).ready(function () {
+            $("#country").change(function () {
+                var countryid = document.getElementById("country").value;
+                debugger
+                $.ajax({
+                    type: "post",
+                    url: "/Country/GetStates?cid=" + countryid,
+                    contentType: "html",
+                    success: function (response) {
+                        $("#sid").empty();
+                        $("#sid").append(response);
+                    }
+                });
+            })
+        })
+</script>

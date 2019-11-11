@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="assignmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="states" Relationship="assignmentModel.FK__state__countryid__5CD6CB2B" FromRole="country" ToRole="state" />
+  </EntityType>
+  <EntityType Name="state1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="state2">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="state3">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="state4">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="assignmentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="countries" EntityType="Self.country" />
+    <EntitySet Name="state1" EntityType="Self.state1" />
+    <EntitySet Name="state2" EntityType="Self.state2" />
+    <EntitySet Name="state3" EntityType="Self.state3" />
+    <EntitySet Name="state4" EntityType="Self.state4" />
+    <EntitySet Name="states" EntityType="assignmentModel.state" />
+    <AssociationSet Name="FK__state__countryid__5CD6CB2B" Association="assignmentModel.FK__state__countryid__5CD6CB2B">
+      <End Role="country" EntitySet="countries" />
+      <End Role="state" EntitySet="states" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="state">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="countryid" Type="Int32" />
+    <NavigationProperty Name="country" Relationship="assignmentModel.FK__state__countryid__5CD6CB2B" FromRole="state" ToRole="country" />
+  </EntityType>
+  <Association Name="FK__state__countryid__5CD6CB2B">
+    <End Type="assignmentModel.country" Role="country" Multiplicity="0..1" />
+    <End Type="assignmentModel.state" Role="state" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="country">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="state">
+        <PropertyRef Name="countryid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

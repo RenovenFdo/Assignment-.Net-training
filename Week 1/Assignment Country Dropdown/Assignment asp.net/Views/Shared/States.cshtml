@@ -1,0 +1,9 @@
+﻿@model Assignment_asp.net.Models.state
+<option>select state</option>
+@if (ViewBag.states != null)
+{
+foreach (var item in ViewBag.states)
+{
+    <option value="@item" >@item.Text</option>
+}
+}
