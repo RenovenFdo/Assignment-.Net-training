@@ -20,28 +20,20 @@ namespace Assignment_display_department.Controllers
         [HttpPost]
         public ActionResult Index(FormCollection form)
         {
-            //Employee data = new Employee();
+
             int id = int.Parse(form[0]);
             TempData["id"] = id;
-            //foreach (var item in employee.Employees )
-            //{
-            //    if (item.DepartmentId == id)
-            //        emp.Add(item);
-            //}
             return RedirectToAction("Display", "Home");
            
         }
         public ActionResult Display()
         {
+
             int id = Convert.ToInt32(TempData["id"]);
-            foreach (var item in employee.Employees)
-            {
-                if (item.DepartmentId == id)
-                    emp.Add(item);
-            }
+            emp = employee.Employees.Where(x => x.DepartmentId == id).ToList();
+            ViewBag.department = emp.ElementAt(0).Department.Name;
             return View(emp);
-            //emp1 = emp;
-            //return View(emp1);
+
         }
 
         public ActionResult About()
