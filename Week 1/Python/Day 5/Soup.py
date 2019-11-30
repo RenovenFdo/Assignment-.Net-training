@@ -17,7 +17,7 @@ def createtable():
                  CHANGE1 FLOAT,
                  LOSS FLOAT
                   )''')
-#createtable()
+createtable()
 db = pymysql.connect("localhost","root","","test")
 cursor = db.cursor()
 r=urllib.urlopen('https://www.moneycontrol.com/').read()
