@@ -32,7 +32,6 @@ for k in divs:
         c = []
         for i in j.find_all('td'):
             c.append(i.get_text())
-            print(c)
         cursor.execute("""INSERT INTO {0}(COMPANY,PRICE,CHANGE1,LOSS)
                        VALUES ('{1}',{2},{3},{4})""".format(a, c[0], c[1], c[2], c[3]))
         db.commit()
